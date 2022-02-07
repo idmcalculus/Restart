@@ -17,6 +17,7 @@
 		AE14C9DC279FE02E003753AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14C9DB279FE02E003753AB /* HomeView.swift */; };
 		AE14C9DE27A00B8C003753AB /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14C9DD27A00B8C003753AB /* CircleGroupView.swift */; };
 		AE4E2CAD27A41DA800FF6EF5 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2CAC27A41DA800FF6EF5 /* AudioPlayer.swift */; };
+		AEE652B727B1179B00C4DF1B /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = AEE652B627B1179B00C4DF1B /* ShowTime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE652B727B1179B00C4DF1B /* ShowTime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,9 @@
 			dependencies = (
 			);
 			name = Restart;
+			packageProductDependencies = (
+				AEE652B627B1179B00C4DF1B /* ShowTime */,
+			);
 			productName = Restart;
 			productReference = AE14C9BF279FD545003753AB /* Restart.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +168,9 @@
 				Base,
 			);
 			mainGroup = AE14C9B6279FD545003753AB;
+			packageReferences = (
+				AEE652B527B1179B00C4DF1B /* XCRemoteSwiftPackageReference "ShowTime" */,
+			);
 			productRefGroup = AE14C9C0279FD545003753AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEE652B527B1179B00C4DF1B /* XCRemoteSwiftPackageReference "ShowTime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/ShowTime.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEE652B627B1179B00C4DF1B /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEE652B527B1179B00C4DF1B /* XCRemoteSwiftPackageReference "ShowTime" */;
+			productName = ShowTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE14C9B7279FD545003753AB /* Project object */;
 }
